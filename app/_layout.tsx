@@ -17,8 +17,16 @@ export default function Layout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ title: 'Onboarding', headerShown: false }} />
+      <Stack.Screen name="auth/sign-in" options={{ title: 'Sign in', headerShown: false }} />
+      <Stack.Screen name="auth/sign-up" options={{ title: 'Sign up', headerShown: false }} />
+
+
       <Stack.Screen
         name="details"
+        options={{ title: 'Details', headerLeft: () => <BackButton /> }}
+      />
+      <Stack.Screen
+        name="recommendation-create"
         options={{ title: 'Details', headerLeft: () => <BackButton /> }}
       />
     </Stack>
