@@ -1,6 +1,7 @@
 import { Feather } from '@expo/vector-icons';
 import { Stack, useRouter } from 'expo-router';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function Layout() {
   const router = useRouter();
@@ -15,21 +16,20 @@ export default function Layout() {
   );
 
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ title: 'Onboarding', headerShown: false }} />
-      <Stack.Screen name="auth/sign-in" options={{ title: 'Sign in', headerShown: false }} />
-      <Stack.Screen name="auth/sign-up" options={{ title: 'Sign up', headerShown: false }} />
+    <SafeAreaProvider>
+      <Stack>
+        <Stack.Screen name="index" options={{ title: 'Onboarding', headerShown: false }} />
+        <Stack.Screen name="auth/sign-in" options={{ title: 'Sign in', headerShown: false }} />
+        <Stack.Screen name="auth/sign-up" options={{ title: 'Sign up', headerShown: false }} />
+        <Stack.Screen name="home" options={{ title: 'Home', headerShown: false }} />
+        <Stack.Screen name="recommendation/create" options={{ title: 'New Recommendation' }} />
 
-
-      <Stack.Screen
-        name="details"
-        options={{ title: 'Details', headerLeft: () => <BackButton /> }}
-      />
-      <Stack.Screen
-        name="recommendation-create"
-        options={{ title: 'Details', headerLeft: () => <BackButton /> }}
-      />
-    </Stack>
+        <Stack.Screen
+          name="details"
+          options={{ title: 'Details', headerLeft: () => <BackButton /> }}
+        />
+      </Stack>
+    </SafeAreaProvider>
   );
 }
 

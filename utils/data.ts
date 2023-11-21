@@ -1,0 +1,92 @@
+export const RECOMMENDATIONS = [
+    {
+        id: '1',
+        name: 'Cozy Beans Cafe',
+        category: 'Coffee Shop',
+        address: '123 Main Street, Cityville',
+        phone: '(555) 123-4567',
+        email: 'cozybeans@example.com',
+        website: 'www.cozybeanscafe.com',
+        description: 'A quaint coffee shop serving handcrafted coffee with a cozy atmosphere.',
+        features: ['Wi-Fi', 'Outdoor Seating'],
+        ratings: 4.5,
+        reviews: [
+            { user: 'CoffeeLover123', comment: 'Great coffee and friendly staff!', rating: 5 },
+            {
+                user: 'TeaEnthusiast',
+                comment: 'Nice ambiance, but more tea options would be appreciated.',
+                rating: 4,
+            },
+        ],
+        latitude: 34.0522,
+        longitude: -118.2437,
+        images: {
+            logo: 'url_to_logo_image',
+            interior: ['url_to_interior_image1', 'url_to_interior_image2'],
+            exterior: 'url_to_exterior_image',
+        },
+        operatingHours: {
+            monday: '8:00 AM - 6:00 PM',
+            tuesday: '8:00 AM - 6:00 PM',
+            wednesday: '8:00 AM - 6:00 PM',
+            thursday: '8:00 AM - 6:00 PM',
+            friday: '8:00 AM - 8:00 PM',
+            saturday: '9:00 AM - 8:00 PM',
+            sunday: '9:00 AM - 5:00 PM',
+        },
+        socialMedia: {
+            facebook: 'CozyBeansCafe',
+            instagram: 'cozybeanscafe',
+            twitter: 'CozyBeansTweet',
+        },
+        paymentMethods: ['Cash', 'Credit Card'],
+    },
+    // Add more businesses with similar structure
+    {
+        id: 2,
+        name: 'Green Bites Salad Bar',
+        category: 'Restaurant',
+        address: '456 Oak Avenue, Townsville',
+        phone: '(555) 987-6543',
+        email: 'greenbites@example.com',
+        website: 'www.greenbitessaladbar.com',
+        description: 'Fresh and healthy salad options for a delightful dining experience.',
+        features: ['Vegan Options', 'Takeout'],
+        ratings: 4.2,
+        reviews: [
+            {
+                user: 'HealthyEater',
+                comment: 'Great salads! Love the variety of fresh ingredients.',
+                rating: 4,
+            },
+            {
+                user: 'FoodieExplorer',
+                comment: 'Would recommend for a quick and healthy meal.',
+                rating: 4.5,
+            },
+        ],
+        latitude: 40.7128,
+        longitude: -74.006,
+        images: {
+            logo: 'url_to_logo_image',
+            interior: ['url_to_interior_image1', 'url_to_interior_image2'],
+            exterior: 'url_to_exterior_image',
+        },
+        operatingHours: {
+            monday: '11:00 AM - 8:00 PM',
+            tuesday: '11:00 AM - 8:00 PM',
+            wednesday: '11:00 AM - 8:00 PM',
+            thursday: '11:00 AM - 8:00 PM',
+            friday: '11:00 AM - 9:00 PM',
+            saturday: '12:00 PM - 9:00 PM',
+            sunday: 'Closed',
+        },
+        socialMedia: {
+            facebook: 'GreenBitesSaladBar',
+            instagram: 'greenbitessaladbar',
+            twitter: 'GreenBitesTweet',
+        },
+        paymentMethods: ['Credit Card', 'Online Payment'],
+    },
+    // Add more businesses with similar structure
+];
