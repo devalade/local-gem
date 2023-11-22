@@ -7,11 +7,13 @@ export const Input = ({
   onChangeText,
   value,
   className,
+  secureTextEntry = false,
 }: {
   label?: string;
   placeholder?: string;
   onChangeText: ((text: string) => void) | undefined;
   value: string;
+  secureTextEntry: boolean;
   className?: string;
 }) => {
   return (
@@ -23,6 +25,7 @@ export const Input = ({
           onChangeText={onChangeText}
           className="bg-gray-200 p-2 rounded-md w-full"
           placeholder={placeholder ?? ''}
+          secureTextEntry={secureTextEntry}
         />
       </View>
     </View>
